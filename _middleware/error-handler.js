@@ -9,6 +9,6 @@ function errorHandler(err, req, res, next){
         return res.status(statusCode).json({message: err});
         default:
             return res.status(500).json({message: err.message });
-
+            const value = data.property.subProperty.findOne();
     }
 }
